@@ -19,8 +19,10 @@ options.forEach(option => {
 
 // show thank you article with message / hide article rates
 btnSubmit.addEventListener('click', () => {
-  articleRates.style.display = 'none';
-  articleThanks.classList.add('show');
-  
-  message.innerText = `You selected ${option_selected} out of 5`;
+  if(option_selected) {
+    articleRates.style.display = 'none';
+    articleThanks.classList.add('show');
+    
+    message.innerText = `You selected ${option_selected} out of 5`;
+  }
 });
