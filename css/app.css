@@ -26,8 +26,9 @@ body {
   height: 380px;
   width: 350px;
   padding: 1.5rem;
-  border-radius: 12px;
   background-color: var(--dark-blue);
+  border-radius: 12px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15);
 }
 .article__icon {
   width: 45px;
@@ -54,12 +55,13 @@ body {
   width: 3rem;
   height: 0;
   padding-bottom: 3rem;
-  background-color: var(--light-blue);
-  line-height: 3;
-  color: var(--white);
-  border-radius: 50%;
-  cursor: pointer;
   text-align: center;
+  color: var(--white);
+  line-height: 3;
+  border-radius: 50%;
+  background-color: var(--light-blue);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 .option:hover {
   background-color: var(--orange);
@@ -79,6 +81,7 @@ input[type=radio] {
   color: var(--white);
   border: none;
   border-radius: 24px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15);
 }
 .article__button:hover {
   background-color: var(--white);
@@ -86,25 +89,35 @@ input[type=radio] {
   cursor: pointer;
 }
 .article--thanks {
-  opacity: 0;
+  display: none;
 }
 .show {
-  opacity: 1;
+  display: block;
   align-items: center; 
+  text-align: center;
 }
 .img-thanks {
   display: block;
   width: 60%;
+  padding-top: .5rem;
+  margin: 0 auto;
+}
+.article__title--thanks {
+  margin: .5rem 0;
 }
 .article__text--thanks {
   text-align: center;
 }
 .article__message {
-  padding: 1rem;
+  display: inline-block;
+  width: 200px;
+  padding: .7rem;
+  margin: 1rem 0;
   border-radius: 24px;
   text-align: center;
   background-color: var(--light-blue);
   color: var(--orange);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
 }
 .selected {
   background-color: var(--medium-grey);
