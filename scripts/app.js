@@ -1,28 +1,26 @@
 const options = document.querySelectorAll('input[name="rate"]');
-const label = document.querySelectorAll('.option')
 const btnSubmit = document.querySelector('.article__button');
-const message = document.getElementById('message');
 const articleRates = document.getElementById('articleRates');
 const articleThanks = document.getElementById('articleThanks');
+const message = document.getElementById('message');
 
-// get the value of the option selected
-let option_selected;
+// get the value of selected option
+let option_value_selected;
 
 options.forEach(option => {
   option.addEventListener('click', () => {  
     if(option.checked) {
-      label[option.value - 1].classList.add('selected');
-      option_selected = option.value;
+      option_value_selected = option.value;
     }
   });
 });
 
-// show thank you article with message / hide article rates
+// show thank you article with message and hide article rates
 btnSubmit.addEventListener('click', () => {
-  if(option_selected) {
+  if(option_value_selected) {
     articleRates.style.display = 'none';
     articleThanks.classList.add('show');
     
-    message.innerText = `You selected ${option_selected} out of 5`;
+    message.innerText = `You selected ${option_value_selected} out of 5`;
   }
 });
