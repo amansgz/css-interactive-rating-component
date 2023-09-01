@@ -1,11 +1,4 @@
-# 👩‍💻 Frontend Mentor - Interactive rating component
-
-[Frontend Mentor challenges](https://www.frontendmentor.io/) help you improve your coding skills by building realistic projects.
-
-This is a solution for [Interactive Rating Component](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI) challenge.
-
-![Design preview for the Interactive rating component coding challenge](https://github.com/amansgz/css-interactive-rating-component/assets/133540994/c6417d36-7805-426a-a527-dba23af7ad0b)
-
+# 👩‍💻 Interactive rating component
 
 
 ## The challenge
@@ -28,10 +21,19 @@ Users should be able to:
 - Mobile-first workflow
 - JavaScript
 
-## Live site solution
 
-[Live site](https://amansgz.github.io/css-interactive-rating-component/) deployed with GitHub Pages.
+<div>
+  <h3>
+    <a href= "https://amansgz.github.io/css-interactive-rating-component/">
+      Live site
+    </a>
+    <span> | </span>
+    <a href= "https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI">
+      Challenge
+    </a>
+  </h3>
+</div>
 
-## Author
+![Design preview for the Interactive rating component coding challenge](https://github.com/amansgz/css-interactive-rating-component/assets/133540994/c6417d36-7805-426a-a527-dba23af7ad0b)
 
-- Frontend Mentor - [@amansgz](https://www.frontendmentor.io/profile/amansgz)
+This application/site was created as a submission to <a href= "https://www.frontendmentor.io/">Frontend Mentor Challenges</a> 
