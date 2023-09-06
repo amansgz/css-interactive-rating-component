@@ -18,88 +18,95 @@
 <body>
   <main>
     <!-- Rating state start -->
-    <article class= "article" id= "articleRates">
-      <img 
-        class= "article__icon"
+    <article class= "card" 
+      id= "cardRates">
+      <img class= "card__icon"
         src= "./css/assets/icon-star.svg" 
         alt= "">
-      <h1 class= "article__title">
+      <h1 class= "card__title">
         How did we do?
       </h1>
-      <p class= "article__text">
+      <p class= "card__text">
         Please let us know how we did with your support request. All feedback is appreciated 
         to help us improve our offering!
       </p>
-      <fieldset class= "rates">
-        <input type="radio"
-        name= "rate"
-        value= "1"
-        id= "rate1">
-        <label for= "rate1"
-        class= "option">
-          1
-        </label>
+
+      <form novalidate>
+        <fieldset class= "options__rate">
+          <input type="radio"
+            name= "rate"
+            value= "1"
+            id= "rate1">
+          <label for= "rate1"
+            class= "option">
+            1
+          </label>
+          
+          <input type="radio"
+            name= "rate"
+            value= "2"
+            id= "rate2">
+          <label for= "rate2"
+            class= "option">
+            2
+          </label>
+          
+          <input type="radio"
+            name= "rate"
+            value= "3"
+            id= "rate3">
+          <label for= "rate3"
+            class= "option">
+            3
+          </label>
+
+          <input type="radio"
+            name= "rate"
+            value= "4"
+            id= "rate4">
+          <label for= "rate4"
+            class= "option">
+            4
+          </label>
+
+          <input type="radio"
+            name= "rate"
+            value= "5"
+            id= "rate5">
+          <label for= "rate5"
+            class= "option">
+            5
+          </label>
+        </fieldset>
         
-        <input type="radio"
-        name= "rate"
-        value= "2"
-        id= "rate2">
-        <label for= "rate2"
-        class= "option">
-          2
-        </label>
-        
-        <input type="radio"
-        name= "rate"
-        value= "3"
-        id= "rate3">
-        <label for= "rate3"
-        class= "option">
-          3
-        </label>
-
-        <input type="radio"
-        name= "rate"
-        value= "4"
-        id= "rate4">
-        <label for= "rate4"
-        class= "option">
-          4
-        </label>
-
-        <input type="radio"
-        name= "rate"
-        value= "5"
-        id= "rate5">
-        <label for= "rate5"
-        class= "option">
-          5
-        </label>
-
-      </fieldset>
-      
-      <button 
-        class= "article__button" 
-        type= "submit">
-        Submit
-      </button>
+        <button class= "btn__submit" 
+          type= "submit">
+          Submit
+        </button>
+      </form>
     </article>
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <article class= "article article--thanks" id= "articleThanks">
-      <img 
-      class= "img-thanks"
-      src= "./css/assets/illustration-thank-you.svg" 
-      alt= "illustration thank you">
-      <p class= "article__message" id= "message"></p>
-      <h2 class= "article__title article__title--thanks">
+    <article class= "card card__thanks" 
+      id= "cardThanks">
+      <div class= "thanks__img">
+        <img src= "./css/assets/illustration-thank-you.svg" 
+        alt= "illustration thank you">
+      </div>  
+      <p class= "thanks__message" 
+        id= "thanksMessage">
+      </p>
+      <h2 class= "card__title thanks__title">
         Thank you!
       </h2>
-      <p class= "article__text article__text--thanks">
+      <p class= "card__text thanks__text">
         We appreciate you taking the time to give a rating. If you ever need more support, 
         don’t hesitate to get in touch!
       </p>
+      <button class= "btn__rate__again">
+        Rate again
+      </button>
     </article>
     <!--Thank you state end -->
   

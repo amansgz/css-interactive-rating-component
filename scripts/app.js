@@ -1,10 +1,11 @@
+const cardRates = document.getElementById('cardRates');
 const options = document.querySelectorAll('input[name="rate"]');
-const btnSubmit = document.querySelector('.article__button');
-const articleRates = document.getElementById('articleRates');
-const articleThanks = document.getElementById('articleThanks');
-const message = document.getElementById('message');
+const btnSubmit = document.querySelector('.btn__submit');
+const cardThanks = document.getElementById('cardThanks');
+const thanksMessage = document.getElementById('thanksMessage');
+const btnRateAgain = document.querySelector('.btn__rate__again');
 
-// get the value of selected option
+// get the value of selected option rate
 let option_value_selected;
 
 options.forEach(option => {
@@ -15,12 +16,18 @@ options.forEach(option => {
   });
 });
 
-// show thank you article with message and hide article rates
-btnSubmit.addEventListener('click', () => {
+// show option rate selected with thanks message
+btnSubmit.addEventListener('click', (e) => {
+  e.preventDefault()
   if(option_value_selected) {
-    articleRates.style.display = 'none';
-    articleThanks.classList.add('show');
+    cardRates.style.display = 'none';
+    cardThanks.classList.add('show');
     
-    message.innerText = `You selected ${option_value_selected} out of 5`;
+    thanksMessage.innerText = `You selected ${option_value_selected} out of 5`;
   }
 });
+
+
+btnRateAgain.addEventListener("click", () => {
+  location.reload();
+}) 
