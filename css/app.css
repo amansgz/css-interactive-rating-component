@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 460px;
+  height: 450px;
   width: 360px;
   padding: 2rem 1.5rem;
   background-color: var(--dark-blue);
@@ -42,6 +42,7 @@ body {
   color: var(--white);
 }
 .card__text {
+  font-size: 15px;
   color: var(--medium-grey);
   line-height: 1.5;
 }
@@ -132,4 +133,19 @@ input[type=radio]:checked + .option {
   background-color: var(--light-blue);
   color: var(--white);
   cursor: pointer;
+}
+.footer {
+  margin-top: auto;
+  padding: 2em;
+  text-align: center;
+  color: var(--light-blue);
+}
+.footer__attribution a {
+  text-decoration: none;
+  color: var(--light-blue);
+  transition: color .1s ease;
+}
+.footer__attribution a:hover,
+.footer__attribution a:focus-visible {
+  color: var(--medium-grey);
 }
