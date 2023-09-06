@@ -90,14 +90,15 @@ input[type=radio]:checked + .option {
   width: 100%;
   padding: 1rem;
   margin: 0 auto;
-  margin-top: 2.3rem;
   text-transform: uppercase;
+  letter-spacing: 1px;
   border: none;
   border-radius: 24px;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.15);
   transition: .1s ease;
 }
 .btn__submit {
+  margin-top: 2.3rem;
   background-color: var(--orange);
   color: var(--white);
 }
@@ -108,6 +109,7 @@ input[type=radio]:checked + .option {
 }
 .card__thanks {
   display: none;
+  padding: 2rem 1.3rem;
 }
 .show {
   display: block;
@@ -116,24 +118,25 @@ input[type=radio]:checked + .option {
 }
 .thanks__img img {
   display: block;
-  width: 60%;
+  width: 58%;
   padding: .5rem 0;
   margin: 0 auto;
 }
 .thanks__message {
   display: inline-block;
   width: 200px;
-  padding: .7rem 0;
+  margin-top: 1rem;
   text-align: center;
   color: var(--orange);
 }
 .thanks__title {
-  margin: .8rem 0;
+  margin: 1.5rem 0 1rem;
 }
 .thanks__text {
   text-align: center;
 }
 .btn__rate__again {
+  margin-top: 2rem;
   border: 1px solid var(--orange);
   background-color: var(--dark-blue);
   color: var(--white);
