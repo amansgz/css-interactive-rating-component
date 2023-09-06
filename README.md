@@ -34,6 +34,6 @@ Users should be able to:
   </h3>
 </div>
 
-![Design preview for the Interactive rating component coding challenge](https://github.com/amansgz/css-interactive-rating-component/assets/133540994/c6417d36-7805-426a-a527-dba23af7ad0b)
+![Design preview for the Interactive rating component coding challenge](./css/assets/preview.png)
 
 This application/site was created as a submission to <a href= "https://www.frontendmentor.io/">Frontend Mentor Challenges</a> 
